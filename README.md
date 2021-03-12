@@ -1,7 +1,7 @@
 # assign
 
-Kindly read 
-Here are two folders 
+Kindly read, 
+Here are the three folders 
 1) One
 2) Three
 3) Two
