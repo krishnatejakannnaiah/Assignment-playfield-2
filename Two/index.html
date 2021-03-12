@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clone | Zoom</title>
+ 	<link rel="icon" href="logo.jfif">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input, button
+{
+	    outline: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #666699;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #666699;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+
+}
+
+ .main{
+  	background: url('mainmain2.jpg');
+  	width: 100%;
+  	background-position: center;
+  	height: 510px;
+  	background-repeat: no-repeat;
+ background-size: cover;
+  }
+
+  .align
+  {
+  	text-align: center;
+  	color: white;
+  	margin-top: 200px;
+  }
+
+  .search
+  {
+  	border: none;
+  	border-radius: 10px;
+  	width: 60%;
+  	height: 50px;
+  	padding : 10px;
+  	padding-left: 15px;
+  	font-size: 18px;
+  	box-shadow: 2px 2px 2px;
+  }
+.main2
+{
+	padding:20px;
+	margin-top: -17px;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 60%;
+  margin-left: 20%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+@media screen and (max-width:900px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 90%;
+  margin-left: 5%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+
+}
+
+.benz
+{
+	background: url('benz.jpg');
+	width: 100%;
+  	background-position: center;
+  	height: 350px;
+  	background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+.benzdata
+{
+	padding-top: 120px;
+	color: white;
+	text-align: center;
+}
+
+.dollar
+{
+	text-align: center;
+	margin-left: 40%;
+	width: 20%;
+	border-radius: 3px;
+	background-color: white;	
+	float: center;
+	padding: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	margin-top: 50px;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.okay
+{
+		text-align: center;
+			margin-left: 40px;
+
+	
+	}
+.button
+{
+	text-align: center;
+	padding: 10px;
+	width: 200px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 25px;
+}
+
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+.grid-container1 {
+	
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  text-align: center;
+}
+
+.grid-container2 {
+	
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+.grid-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 5px;
+ 
+  text-align: center;
+}
+
+.getit{
+	background:url('texture2.jpg');
+	padding: 20px;
+	height: 550px;
+}
+
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+}
+.grid-item4 {
+  background-color:   #9966ff;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #666699;
+  padding: 10px;
+}
+.grid-item5 {
+  padding: 2px;
+  
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav" >
+  <a href="#home" class="active"><img src="logo.f0c7a9744cfeb3fb5c90eafda61dd2ce.svg" width="80" height="30"></a>
+  <a href="#news">OFFERS</a>
+  <a href="#contact">SUBSCRIPTION</a>
+  <a href="#about">AMIGO</a>
+  <a href="#about">ZMS</a>
+  <a href="#about">MOBILE APP</a>
+  <a href="#about">SIGNUP<br>LOGIN</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="main">'
+<div class="align">
+	<h1>DRIVE IN A SANITISED ZOOMCAR</h1>
+<h5>Self Drive Car Rental in Bangalore</h5>
+<div>
+	<input class="search" type="text" name="search" placeholder="Start your wonderful journey" />
+</div>
+</div>
+
+</div>
+
+<div class="main2">
+	<h2>THE ZOOMCAR ADVANTAGE</h2>
+	<h5>We simplified car rentals, so you can focus on what's important to you.</h5>
+
+<div class="grid-container">
+  <div class="grid-item">
+  	<img src="gasoline-pump.png" width="40" height="40">
+  	<h4 style="color:lightgreen;">Fuel Cost Included</h4>
+
+Don't worry about mileage! All fuel costs are included. If you refill fuel, we'll pay you back!
+  </div>
+  <div class="grid-item">
+  	  	<img src="server.png" width="40" height="40">
+
+  	<h4 style="color:lightgreen;">No Hidden Charges</h4>
+  	
+  	Our prices include taxes and insurance.
+What you see is what you really pay!
+  </div>
+  <div class="grid-item">
+  	  	<img src="gift-box.png" width="40" height="40">
+
+  	<h4 style="color:lightgreen;">Flexi Pricing Packages</h4>
+  	
+  	One size never fits all! Choose a balance of time and kilometers that works best for you.
+  </div>  
+  <div class="grid-item">
+  	  	<img src="placeholder.png" width="40" height="40">
+
+  	<h4 style="color:lightgreen;">Go Anywhere</h4>
+  	
+  	Our cars have all-India permits.  Just remember to pay state tolls and entry taxes.
+  </div>
+  <div class="grid-item">
+  	  	<img src="road.png" width="40" height="40">
+
+  	<h4 style="color:lightgreen;">24x7 Roadside Assistance</h4>
+  	
+  	We have round-the-clock, pan India partners. Help is never far away from you.
+  </div>
+  <div class="grid-item">
+  	  	<img src="car-insurance.png" width="40" height="40">
+
+  	<h4 style="color:lightgreen;">Damage Insurance</h4>
+  	
+  	All your bookings include damage insurance! Drive safe, but don’t worry!
+  </div>  
+   
+</div>
+
+</div>
+
+<div style="margin: 0;">
+	<div class="benz">
+		<div class="benzdata">
+			<h2 class="">SUPERMILER CLUB</h2>
+		<p>Premium club which rewards you everytime you drive with us</p>
+		<p>SUPERMILER PRIVILEGES</p> 
+		</div>
+
+		<div class="dollar">
+			<img src="dollar-coin.png" width="50" height="50">
+			<h5>EARN Z POINTS</h5>
+		</div>
+		<div class="okay">
+			<p>Earn Z-Points for every booking and redeem for additional discount</p>
+			<button class="button" style="background-color: transparent;">LEARN MORE</button>
+		</div>
+	</div>
+
+</div>
+
+<div class="slideshow-container" style="margin-top: 200px; background: url('back2.jpg'); height: 500px;">
+  <div class="mySlides1" style="padding: 20px; color: white;" >
+  	<h2 style="text-align: center;">A CAR FOR EVERY NEED</h2>
+  	<h5 style="text-align: center;">We have a range of cars, so something will perfectly fit your trip</h5>
+  	<h1 style="text-align: center;">LUXURY</h1>
+    <img src="1.png" style="width:400px; padding-left: 100px;">
+
+  </div>
+
+  <div class="mySlides1" style="padding: 20px; color: white;">
+  	<h2 style="text-align: center;">A CAR FOR EVERY NEED</h2>
+  	<h5 style="text-align: center;">We have a range of cars, so something will perfectly fit your trip</h5>
+  	  	<h1 style="text-align: center;">SEDAN</h1>
+
+    <img src="2.png" style="width:400px; padding-left: 100px;">
+  </div>
+
+  <div class="mySlides1" style="padding: 20px; color: white;">
+  	<h2 style="text-align: center;">A CAR FOR EVERY NEED</h2>
+  	<h5 style="text-align: center;">We have a range of cars, so something will perfectly fit your trip</h5>
+  	<h1 style="text-align: center;">HATCHBACK</h1>
+    <img src="3.png" style="width:400px; padding-left: 100px;">
+  </div>
+<div class="mySlides1" style="padding: 20px; color: white;">
+  	<h2 style="text-align: center;">A CAR FOR EVERY NEED</h2>
+  	<h5 style="text-align: center;">We have a range of cars, so something will perfectly fit your trip</h5>
+  	  	<h1 style="text-align: center;">SUV</h1>
+
+    <img src="4.png" style="width:400px; padding-left: 100px;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+<div>
+	<div style="padding: 20px; text-align: center;">
+		<h2>HOW ZOOMCAR WORKS</h2>
+		<p>Drive yourself to an adventure and back in 5 simple steps</p>
+	</div>
+	<div class="grid-container1">
+  <div class="grid-item1">
+  	<img src="q.svg" width="50" height="50">
+  	<h4>BOOK</h4>
+  	<p>Search for and book a car on our site!</p>
+  </div>
+  <div class="grid-item1">
+  	  	<img src="w.svg" width="50" height="50">
+
+  	<h4>UPLOAD LICENSE</h4>
+  	<P>Upload your driver’s license, and pay a small security deposit.</P>
+  </div>
+  <div class="grid-item1">
+  	  	<img src="e.png" width="40" height="50">
+
+  	<h4>UNLOCK</h4>
+  	<p>We SMS your car details 20 minutes before pickup. Unlock it via the Zoomcar app.</p>
+  </div>
+  <div class="grid-item1">
+  	  	<img src="r.svg" width="50" height="50">
+
+  	<h4>ZOOM</h4>
+  	<p>Fill the start checklist in the Zoomcar app. Grab the keys from the glove-box and drive.</p>
+  </div>
+  <div class="grid-item1">
+  	  	<img src="t.svg" width="50" height="50">
+
+  	<h4>RETURN</h4>
+  	<P>Return the car to the same location and fill the end checklist to end your trip.</P>
+  </div>
+  
+
+</div>
+<div style="text-align: center;">
+		<button class="button" style="background-color: transparent;">SIGN UP</button>
+	</div>
+
+
+
+<div class="getit">
+
+	<div style="margin-left: 20%; margin-top: 200px;">
+		<h2 style="color: white;">ZOOM ON THE GO!</h2>
+		<p style="color: white;">Make a booking, unlock your car, and end your reservation all from our app</p>
+		<img src="gplay.png" width="150" height="60">
+		<img src="download.png" width="140" height="50">
+
+	</div>
+</div>
+
+
+
+<div class="grid-container2">
+  <div class="grid-item2">
+  	<img src="a.svg" width="100" height="100">
+  	<h4>3,000+</h4>
+  	<p>Rides Daily</p>
+  </div>
+  <div class="grid-item2">
+  	  	<img src="s.svg" width="100" height="100">
+
+  	<h4>48,00,000+</h4>
+  	<P>Happy users</P>
+  </div>
+  <div class="grid-item2">
+  	  	<img src="d.svg" width="100" height="100">
+
+  	<h4>36,00,00,000+</h4>
+  	<p>Km Travelled</p>
+  </div>
+  <div class="grid-item2">
+  	  	<img src="f.svg" width="100" height="100">
+
+  	<h4>6,500+</h4>
+  	<p>Number of Zoomcars</p>
+  </div>
+  <div class="grid-item2">
+  	  	<img src="g.svg" width="120" height="60">
+
+  	<h4>Rating 4.7/5.0</h4>
+  	<P>Rated by 3,00,000+ customers<br>
+over 10,00,000+ bookings</P>
+  </div>
+  
+</div>
+<div class="slideshow-container" style="background-color:black; height: 600px;">
+  <div class="mySlides2" style="padding-top: 200px; width: 60%; margin-left: 20%;">
+  	<h1 style="text-align: center; color: white; font-size: 50px;">"</h1>
+	<h3 style="text-align: center; color: white;">I could not believe my ears on the benefits, especially the reimbursement of fuel. I would surely continue to use your professional services in months to come.</h3>
+	<h4 style="text-align: center; color: green;">- D. Samuel</h4>
+  </div>
+
+  <div class="mySlides2" style="padding-top: 200px; width: 60%; margin-left: 20%;">
+  	  	<h1 style="text-align: center; color: white; font-size: 50px;">"</h1>
+
+<h3 style="text-align: center; color: white;">I have loved your concept since the time I saw it online. Now, after using your services, this concept is wonderful and a delight to all customers. A service in other major cities would go a long way in establishing your brand as well as loyalty of customers.</h3>  
+<h4 style="text-align: center; color: green;">- Rohit R</h4>
+</div>
+
+  <div class="mySlides2" style="padding-top: 200px; width: 60%; margin-left: 20%;">
+  	  	<h1 style="text-align: center; color: white; font-size: 50px;">"</h1>
+
+<h3 style="text-align: center; color: white;">Excellent customer service. Would highly recommend ZOOM to anybody who is in need of self drive cars. Would be great if they start opening more pick up points throughout bangalore</h3>
+<h4 style="text-align: center; color: green;">- Arun M</h4>  
+</div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+
+<div class="slideshow-container">
+  <div class="mySlides3">
+  	<a style="margin-left: 10%;" href="https://techcrunch.com/2016/08/24/ford-leads-24m-investment-in-india-based-vehicle-rental-company-zoomcar/"><img src="download.jfif" width="100" height="100"></a>
+  	<a style="margin-left: 10%;" href="http://blogs.wsj.com/indiarealtime/2016/08/25/ford-bets-on-india-car-rental-startup-zoomcar/"><img src="download (2).png" width="100" height="100"></a>
+  	<a style="margin-left: 10%;" href="https://yourstory.com/2020/05/zoomcar-resumes-operations-35-cities-coronavirus-lockdown"><img src="download (1).png" width="100" height="100"></a>
+  	<a style="margin-left: 10%;" href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/zoomcar-resumes-operations-in-35-cities-after-easing-of-lockdown-restrictions/articleshow/75999150.cms">
+  		<img src="download (3).png" width="180" height="40">
+  	</a>
+  </div>
+
+  <div class="mySlides3">
+  	  	
+</div>
+
+ 
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+<div class="grid-container4">
+  <div class="grid-item4" style="text-align: center;">
+  	<img src="Z.svg" width="30" height="30">
+  	<p>How zoomcar works?</p>
+  </div>
+  <div class="grid-item4" style="text-align: center;">
+  	  	<img src="X.svg" width="30" height="30">
+  	<p>Policies</p>
+  </div>
+  <div class="grid-item4" style="text-align: center;">
+  	  	<img src="C.svg" width="30" height="30">
+  	<p>Help Support</p>
+  </div>  
+  <div class="grid-item4" style="text-align: center;">
+  	  	<img src="V.svg" width="30" height="30">
+  	<p>Zoom in Safety</p>
+  </div>
+  
+</div>
+
+<div style="background-color: #666699; color: white;">
+	
+	<h4 style="text-align: center; background-color: #666699; margin: 0; padding: 30px;">About Us</h4>
+<div class="grid-container5" style="width: 80%; margin-left: 10%;">
+  <div class="grid-item5"><p>Zoomcar Team</p></div>
+  <div class="grid-item5"><p>Zoomcar Subscription</p></div>
+  <div class="grid-item5"><p>zoomcar Blog</p></div>  
+  <div class="grid-item5"><p>Careers @ Zoomcar</p></div>
+  <div class="grid-item5"><p>Locations & Cars</p></div>
+  <div class="grid-item5"><p>Self Drive Cars</p></div>  
+  <div class="grid-item5"><p>Invest via OurCrows</p></div>
+  <div class="grid-item5"> </div>
+
+
+</div>
+  <h4 style="text-align: center;">Cities</h4>
+
+<div class="grid-container5" style="width: 80%; margin-left: 10%;">
+
+  <div class="grid-item5"><p>Bangalore</p></div>  
+  <div class="grid-item5"><p>Pune</p></div>  
+  <div class="grid-item5"><p>Delhi</p></div>  
+  <div class="grid-item5"><p>Mumbai</p></div>  
+  <div class="grid-item5"><p>Chennai</p></div>  
+  <div class="grid-item5"><p>Hyderabad</p></div>  
+  <div class="grid-item5"><p>Chandigarh</p></div>  
+  <div class="grid-item5"><p>Kolkata</p></div>  
+  <div class="grid-item5"><p>Ahmedabad</p></div>  
+  <div class="grid-item5"><p>Coimbatore</p></div>  
+  <div class="grid-item5"><p>Indore</p></div>  
+  <div class="grid-item5"><p>Jaipur</p></div>  
+  <div class="grid-item5"><p>Ludhiana</p></div>  
+  <div class="grid-item5"><p>Mangalore-Manipal</p></div>  
+  <div class="grid-item5"><p>Mysore</p></div>  
+  <div class="grid-item5"><p>Vizag</p></div>  
+  <div class="grid-item5"><p>Nagpur</p></div>  
+  <div class="grid-item5"><p>Kochi</p></div>  
+  <div class="grid-item5"><p>Udaipur</p></div>  
+  <div class="grid-item5"><p>Vijayawada</p></div>  
+  <div class="grid-item5"><p>Surat</p></div>  
+  <div class="grid-item5"><p>Siligiri</p></div>  
+  <div class="grid-item5"><p>Lucknow</p></div>  
+  <div class="grid-item5"><p>Guwahati</p></div>  
+  <div class="grid-item5"><p>Bhubaneswar</p></div>  
+  <div class="grid-item5"><p>Hassan</p></div>  
+  <div class="grid-item5"><p>Vadodara</p></div>  
+  <div class="grid-item5"><p>Trivandrum</p></div>  
+
+</div>
+<hr>
+<div style="width: 80%; margin-left: 10%;">
+	
+	<h3>Let's Keep in Touch</h3>
+<h5>7th Floor, Tower-B, Diamond District, 150, HAL Airport Road, Kodihalli, Bangalore – 560008</h5>
+
+<img src="m.svg" width="20" height="20" style="border-radius: 50%;">
+<img src="n.svg" width="20" height="20" style="border-radius: 50%;">
+<img src="b.svg" width="20" height="20" style="border-radius: 50%;">
+<img src="l.svg" width="20" height="20" style="border-radius: 50%;">
+<img src="k.svg" width="20" height="20" style="border-radius: 50%;">
+<img src="j.svg" width="20" height="20" style="border-radius: 50%;">
+<p style="font-size: 12px;">© Copyright 2017 Zoomcar India Private Ltd. All rights reserved.
+</p>
+<br>
+</div>
+
+</div>
+	
+	<div style="background-color: #f2f2f2; margin: 0;">
+	<div style="background-color: #f2f2f2; width: 80%; margin-left: 10%; padding: 30px;">
+		<h2>LOOKING FOR SELF DRIVE CARS IN BANGALORE?
+</h2>
+<p>Bangalore being a burgeoning cosmopolitan city is witnessing a shift in culture. With youngsters now being able to establish an equal focus on work and leisure frequent road trips have now become a norm. In addition to this, the added pleasure of a self-driving has given rise in the demand for, self-drive car rentals which has emerged as the answer to many of their prayers.</p>
+<br>
+
+	<h2>HOW MUCH DOES IT COST TO RENT A CAR FOR A DAY?
+</h2>
+<p>If want to rent one out a self-drive car, choose Zoomcar, where you can pick out your self-drive car based on your travelling needs. While small self-drive cars allow you to easily manoeuvre through city traffic, sedans and SUV’s offer more comfort. Affordable prices starting at 60/hr helps you rent a car easily. Whether you want to go on a road trip from Bangalore to Coorg or just need a car to travel within the city the self-drive Zoomcar are your best solution. All Self-drive Zoomcar comes with a limited liability, enabling you to enjoy the comfort of a four-wheeler without having to invest in one, with the added benefit of not having to actually drive it. The Self-drive Zoomcar have even made travel to and from the airport easy. Avoid exorbitantly priced Bangalore airport cabs by choosing to travel in a Zoomcar instead. The Bangalore airport even has a Zoomcar parking lot where you can get a self-drive car rental as soon as you get off your flight, thus eliminating the time taken to look for a cab or hire one.</p>
+<br>
+<h2>WHAT STATES ALLOW SELF DRIVING CARS?
+</h2>
+<p>Drive seamlessly:
+Our Self-Drive cars come with all India permits, Road-Side Assistance (RSA), vehicle insurance and provision of multiple parking sites across the city.
+<br>
+Book Through the App:
+No matter how long you need our Self Drive cars for you can conveniently hire a Self-Drive car online in Bangalore through the Zoomcar app.
+<br>
+Array of services:
+Enjoy tech-enabled booking, tracking and hassle-free payment options too. Make every special occasion memorable by opting to ride in a luxury self-drive car yourself. You could opt for it just for the sheer pleasure and experience too!</p>
+<br>
+
+<h2>STEPS FOR SELF DRIVE CAR BOOKING IN BANGALORE
+OOKING FOR SELF DRIVE CARS IN BANGALORE?
+</h2>
+<p>Drive across the city hassle free with a self-drive car from Zoomcar in the following steps:
+	<ul><li>Download the Zoomcar App from the Play Store or the App Store.</li>
+	<li>Search for a car from the wide range available and book a self-drive car of your choice</li>
+	<li>Upload License and pay a small security deposit</li>
+	<li>Car details will be sent on SMS 20mins before pickup. Unlock it via the Zoomcar App</li>
+	<li>Fill the start checklist in the Zoomcar App. Grab the keys from the glove box and zoom away<br>After the trip, return the car and fill the end checklist from the App to end your trip. We refund your deposit if applicable
+Book, Drive, Repeat. Zoom On.</li></ul>
+</p>
+
+	</div>
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+</script>
+</body>
+</html>
